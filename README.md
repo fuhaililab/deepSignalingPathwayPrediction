@@ -3,9 +3,11 @@
 The repository contains the pytorch implementation of SigGraInferNet.
 
 ## Requirement
-pytorch 1.0.0 or above
-tensorboard 
-tqdm
+python 3.6<br>
+pytorch 1.6.0 or above<br>
+scikit-learn<br>
+tensorboard<br>
+tqdm<br>
 we also provide conda virtual environment for you. You can create a new terminal and cd to the root directory of repository and run following code:<br>
   ```conda env create -f environment.yml```<br>
 A new virtual environment called SigGraInferNet will be created. You can activate the environment by:<br>
@@ -24,7 +26,7 @@ First, modify the data path in `args.py` and corresponding pytorch data processi
 ```
 python train.py -n=SigGraInferNet
 ```
-This will run the SigGraInferNet with default parameter setting. You can also change the parameters in the `Args.py`. You can also visualize the training process in tensorboard:
+This will run the SigGraInferNet with default parameter setting. You can also change the parameters in the `args.py`. You can also visualize the training process in tensorboard:
 
 ```
 tensorboard --logdir=save --port=5678
