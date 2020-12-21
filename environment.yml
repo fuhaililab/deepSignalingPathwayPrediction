@@ -1,0 +1,19 @@
+name: SigGraInferNet
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.6
+  - ujson
+  - numpy
+  - pip
+  - tensorboard
+  - matplotlib
+  - tensorflow
+  - tensorboardX
+  - tqdm
+  - pytorch=1.6.0
+  - scikit-learn
+  - pip:
+    - torch==1.6.0
